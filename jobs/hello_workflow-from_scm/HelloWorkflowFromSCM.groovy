@@ -11,7 +11,9 @@
  */
 { ->
 // In this example, echo is a step: a function defined in a Jenkins plugin and made available to all workflows. 
-  hello 'Workflow'
+  node('swarm') {
+    hello 'Workflow'
+  }
 
   def hello(whom) {
 	echo "hello from ${whom}"	

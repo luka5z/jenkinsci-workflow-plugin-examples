@@ -11,6 +11,6 @@ node {
 // Setting a variable such as PATH in this way is only safe if you are using a single slave
 // for this build.
   withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
-    sh 'mvn -B verify'
+    sh 'mvn -B -Dmaven.test.ignore.failure verify '
   }
 }

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Example how to load external groovy script using Workflow plugin.-->
+<flow-definition plugin="workflow-job@1.10">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@1.10">
+    <script>node {
+  git url: &apos;https://github.com/luka5z/jenkinsci-workflow-plugin-examples.git&apos;, branch: &apos;master&apos;
+  load &apos;jobs/hello_workflow-from_scm/HelloWorkflowFromSCM.groovy&apos;
+}()</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+</flow-definition>

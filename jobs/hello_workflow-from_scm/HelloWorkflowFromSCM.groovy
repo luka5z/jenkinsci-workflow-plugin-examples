@@ -14,9 +14,9 @@
   node('swarm') {
     hello 'Workflow'
   }
-
-  def hello(whom) {
-	echo "hello from ${whom}"	
-  } 
 }
+
+def hello(whom) {
+  echo "hello from ${whom}"	
+} 
 

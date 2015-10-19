@@ -18,6 +18,5 @@ node {
 // but the simple name may be used when unambiguous. 
   step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar', fingerprint: true])
 // Create a delegate build step which could be use later.
-  def junitArchiver = new hudson.tasks.junit.JUnitResultArchiver('**/target/surefire-reports/TEST-*.xml')
-  step junitArchiver
+  step new hudson.tasks.junit.JUnitResultArchiver('**/target/surefire-reports/TEST-*.xml')
 }

@@ -1,7 +1,5 @@
 # jenkinsci-workflow-plugin-examples
-Examples for Jenkins Workflow plugin
-
-Based on Workflow plugin [tutorial](https://github.com/jenkinsci/workflow-plugin/blob/master/TUTORIAL.md). 
+Examples for Jenkins Workflow plugin, based on official [tutorial](https://github.com/jenkinsci/workflow-plugin/blob/master/TUTORIAL.md). 
 
 Remarks:
 ---

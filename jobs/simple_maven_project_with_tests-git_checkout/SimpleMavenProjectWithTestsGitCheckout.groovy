@@ -19,5 +19,5 @@ node {
 // Setting a variable such as PATH in this way is only safe if you are using a single slave
 // for this build.
   env.PATH = "${mvnHome}/bin:${env.PATH}"
-  sh "mvn -B -Dmaven.test.ignore.failure verify"
+  sh "mvn -B -Dmaven.test.failure.ignore verify"
 }

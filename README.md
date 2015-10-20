@@ -1,8 +1,7 @@
 # jenkinsci-workflow-plugin-examples
 Examples for Jenkins Workflow plugin, based on official [tutorial](https://github.com/jenkinsci/workflow-plugin/blob/master/TUTORIAL.md). 
 
-## Remarks:
----
+## Remarks
 - Running Workflow scripts from SCM seems to enable Groovy sandbox and by that 
   scripts require permission before they could be successfully executed.
 
@@ -19,7 +18,6 @@ Examples for Jenkins Workflow plugin, based on official [tutorial](https://githu
   Based on Experimental Plugins Update Center [article](http://jenkins-ci.org/content/experimental-plugins-update-center).
 
 ## Resources
----
 - [Workflow Plugin](https://github.com/jenkinsci/workflow-plugin)
 - [Workflow Global Library](https://github.com/jenkinsci/workflow-plugin/blob/master/cps-global-lib/README.md)
 - [CloudBees Docker Workflow](https://github.com/jenkinsci/docker-workflow-plugin)
